@@ -17,9 +17,6 @@
         "org.apache.commons:commons-lang3": {
             "locked": "3.10"
         },
-        "org.apache.logging.log4j:log4j-web": {
-            "locked": "2.13.3"
-        },
         "org.springframework.boot:spring-boot-starter": {
             "locked": "2.3.12.RELEASE"
         }
@@ -60,6 +57,12 @@
             ],
             "locked": "1.0.0"
         },
+        "com.google.guava:guava": {
+            "firstLevelTransitive": [
+                "com.netflix.conductor:conductor-core"
+            ],
+            "locked": "30.0-jre"
+        },
         "com.google.protobuf:protobuf-java": {
             "firstLevelTransitive": [
                 "com.netflix.conductor:conductor-common",
@@ -81,12 +84,6 @@
         },
         "com.netflix.conductor:conductor-core": {
             "project": true
-        },
-        "com.netflix.servo:servo-core": {
-            "firstLevelTransitive": [
-                "com.netflix.conductor:conductor-core"
-            ],
-            "locked": "0.13.0"
         },
         "com.netflix.spectator:spectator-api": {
             "firstLevelTransitive": [
@@ -137,14 +134,14 @@
                 "com.netflix.conductor:conductor-core"
             ],
             "locked": "3.10"
-        },
-        "org.apache.logging.log4j:log4j-web": {
-            "locked": "2.13.3"
         }
     },
     "testCompileClasspath": {
         "com.datastax.cassandra:cassandra-driver-core": {
             "locked": "3.10.2"
+        },
+        "com.google.protobuf:protobuf-java": {
+            "locked": "3.13.0"
         },
         "com.netflix.conductor:conductor-common": {
             "project": true
@@ -155,17 +152,26 @@
         "org.apache.commons:commons-lang3": {
             "locked": "3.10"
         },
-        "org.apache.logging.log4j:log4j-web": {
-            "locked": "2.13.3"
+        "org.codehaus.groovy:groovy-all": {
+            "locked": "2.5.13"
         },
-        "org.cassandraunit:cassandra-unit": {
-            "locked": "3.11.2.0"
+        "org.spockframework:spock-core": {
+            "locked": "1.3-groovy-2.5"
+        },
+        "org.spockframework:spock-spring": {
+            "locked": "1.3-groovy-2.5"
         },
         "org.springframework.boot:spring-boot-starter-log4j2": {
             "locked": "2.3.12.RELEASE"
         },
         "org.springframework.boot:spring-boot-starter-test": {
             "locked": "2.3.12.RELEASE"
+        },
+        "org.testcontainers:cassandra": {
+            "locked": "1.15.3"
+        },
+        "org.testcontainers:spock": {
+            "locked": "1.15.3"
         }
     },
     "testRuntimeClasspath": {
@@ -204,6 +210,12 @@
             ],
             "locked": "1.0.0"
         },
+        "com.google.guava:guava": {
+            "firstLevelTransitive": [
+                "com.netflix.conductor:conductor-core"
+            ],
+            "locked": "30.0-jre"
+        },
         "com.google.protobuf:protobuf-java": {
             "firstLevelTransitive": [
                 "com.netflix.conductor:conductor-common",
@@ -225,12 +237,6 @@
         },
         "com.netflix.conductor:conductor-core": {
             "project": true
-        },
-        "com.netflix.servo:servo-core": {
-            "firstLevelTransitive": [
-                "com.netflix.conductor:conductor-core"
-            ],
-            "locked": "0.13.0"
         },
         "com.netflix.spectator:spectator-api": {
             "firstLevelTransitive": [
@@ -282,17 +288,26 @@
             ],
             "locked": "3.10"
         },
-        "org.apache.logging.log4j:log4j-web": {
-            "locked": "2.13.3"
+        "org.codehaus.groovy:groovy-all": {
+            "locked": "2.5.13"
         },
-        "org.cassandraunit:cassandra-unit": {
-            "locked": "3.11.2.0"
+        "org.spockframework:spock-core": {
+            "locked": "1.3-groovy-2.5"
+        },
+        "org.spockframework:spock-spring": {
+            "locked": "1.3-groovy-2.5"
         },
         "org.springframework.boot:spring-boot-starter-log4j2": {
             "locked": "2.3.12.RELEASE"
         },
         "org.springframework.boot:spring-boot-starter-test": {
             "locked": "2.3.12.RELEASE"
+        },
+        "org.testcontainers:cassandra": {
+            "locked": "1.15.3"
+        },
+        "org.testcontainers:spock": {
+            "locked": "1.15.3"
         }
     }
 }
